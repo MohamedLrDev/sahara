@@ -1,22 +1,33 @@
-import { MoveRight } from "lucide-react";
 import orange_quad from "../../assets/images/orange_quad.png";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 
-
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
-    <div className="w-full h-screen flex flex-col md:max-2xl:flex-row md:max-2xl: items-center justify-start pt-10">
-      <div className="text-center  text-white">
-        <h1 className="uppercase text-3xl font-bold">Rent a quad or buggy</h1>
-        <p className="text-lg font-medium">to enjoy the full Sahara experience</p>
+    <main className=" px-10 text-white py-10 xl:max-3xl:px-24">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+        <div className="text-center  md:text-left md:w-1/2 space-y-4 md:mr-8">
+          <h1 className="text-4xl font-semibold 3xl:text-6xl 2xl:text-5xl">
+            Rent A Buggy Or Quad
+          </h1>
+          <p className="text-2xl 3xl:text-3xl ">
+            to enjoy the full Sahara experience
+          </p>
+          <div className="max-[768px]:hidden mt-6">
+            <Button variant="outline" className="px-20">
+              Learn More
+            </Button>
+          </div>
+        </div>
+        <div className="flex justify-center md:w-1/2 max-w-[40rem] ">
+          <img src={orange_quad} alt="orange_quad" className="w-full h-auto" />
+        </div>
       </div>
-      <div className="px-10 ">
-        <img src={orange_quad} alt="orange_quad" className="max-w-full h-auto" />
+      <div className="flex justify-center mt-6 md:max-4xl:hidden">
+        <Button variant="outline" className="px-20">
+          Learn More
+        </Button>
       </div>
-      <div className="">
-        <Button  variant="outline" className="px-20 text-base">Learn More <MoveRight className="mx-2 mt-1" /> </Button>
-      </div>
-    </div>
+    </main>
   );
 };
 

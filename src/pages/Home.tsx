@@ -1,22 +1,24 @@
-import Hero from "../components/layout/Hero";
+import Hero from "@/components/layout/Hero";
 import Navbar from "../components/layout/Navbar";
-import bg from "../assets/images/pexels-photo-4869960.jpeg";
+import ContentContainer from "@/components/layout/ContentContainer";
+import Categories from "@/components/layout/Categories";
 
 const Home = () => {
   return (
-    <div
-      className="relative h-screen w-full bg-cover bg-center "
-      style={{
-        backgroundImage: `url(${bg})`,
-      }}
-    >
-      <div className="absolute inset-0 bg-black opacity-30"></div>
+    <ContentContainer>
+      {/* Set relative positioning to make sure absolute children are contained */}
+      <div className="relative bg-[url('/D:/Projects/sahara-quad/src/assets/images/pexels-photo-4869960.jpeg')] bg-cover bg-center min-h-screen">
+        {/* The black overlay */}
+        <div className="absolute inset-0 bg-black opacity-25"></div>
 
-      <div className=" relative z-10 ">
-        <Navbar />
-        <Hero />
+        {/* Make sure Navbar and Hero are above the overlay using z-index */}
+        <div className="relative z-10">
+          <Navbar />
+          <Hero />
+        </div>
       </div>
-    </div>
+      <Categories />
+    </ContentContainer>
   );
 };
 
