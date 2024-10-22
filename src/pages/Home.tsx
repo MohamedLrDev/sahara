@@ -13,7 +13,7 @@ const Home = () => {
     // Simulate a 3-second loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 5000);
 
     // Clean up the timer if the component is unmounted before 3 seconds
     return () => clearTimeout(timer);
