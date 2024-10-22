@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <ContentContainer>
       <div
-        className="relative bg-cover bg-center min-h-screen"
+        className="relative bg-cover bg-center min-h-fit"
         style={{ backgroundImage: `url(${bg_image})` }}
       >
         <div className="absolute inset-0 bg-black opacity-25"></div>
