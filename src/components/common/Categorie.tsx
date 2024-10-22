@@ -5,7 +5,7 @@ interface VehicleCardProps {
   
   const Categorie = ({ image, title }: VehicleCardProps) => {
     return (
-      <div className="container flex justify-center items-center">
+      <div className="container flex justify-center items-center cursor-pointer">
         <div className="relative w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[15rem] lg:w-[24rem] lg:h-[18rem] overflow-hidden rounded-lg group">
           <img
             src={image}
