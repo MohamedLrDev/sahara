@@ -6,6 +6,7 @@ import Categories from "@/components/layout/Categories";
 import bg_image from '../assets/images/pexels-photo-4869960.jpeg';
 import Loader from "@/components/ui/Loader";  // Import the animated Loader
 import QuadHighlights from "@/components/layout/QuadHighlights";
+import Footer from "@/components/layout/Footer";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);  // State to track if the app is loading
@@ -41,6 +42,7 @@ const Home = () => {
       </div>
       <Categories />
       <QuadHighlights />
+      <Footer />
     </ContentContainer>
   );
 };
