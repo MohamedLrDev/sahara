@@ -1,5 +1,5 @@
 import sahara_bg from "../../assets/images/sahara_bg.jpg";
-import quad_rider from "../../assets/images/quad_rider.png";
+// import quad_rider from "../../assets/images/quad_rider.png";
 import { Button } from "@/components/ui/button";
 import { Clock, ShieldCheck, Headphones, Award } from "lucide-react";
 
@@ -33,26 +33,22 @@ const highlights = [
 
 const QuadHighlights = () => {
   return (
-    <main className=" container w-full">
-      <div className=" w-full flex flex-col md:flex-row-reverse  ">
-        <div className="w-full relative items-center flex justify-end ">
+    <main className="w-full pt-5">
+      <div className=" w-full flex flex-col md:flex-row-reverse justify-center  items-center ">
+        <div className="w-full   max-w-[100vh] ">
           <img
             src={sahara_bg}
             alt="sahara_bg"
-            className="w-full h-auto object-cover" // Ensures the background image is responsive
+            className="w-full object-containe" // Ensures the background image is responsive
           />
-          {/* <img
-          src={quad_rider}
-          alt="quad_rider"
-          className="absolute inset-0 w-full h-full object-contain rotate-12" // Rider image sticks to the background
-        /> */}
+          
         </div>
 
-        <div className="py-10 px-10">
-          <h1 className="text-2xl font-bold leading-tight">
+        <div className="py-10 px-10  xl:max-3xl:px-24">
+          <h1 className="text-2xl xl:text-4xl font-bold leading-tight">
             Exploring The Excitement Of Buggies And Quads
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 xl:text-xl">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Nostrum
             laborum ut est dolorious suscipit eligendi provident facere ipsa
             laboriosae fuga.
@@ -64,8 +60,8 @@ const QuadHighlights = () => {
               <div key={highlight.id} className="flex items-start space-x-3">
                 {highlight.icon}
                 <div>
-                  <h3 className="font-semibold">{highlight.title}</h3>
-                  <p className="text-sm text-gray-600">
+                  <h3 className="font-semibold xl:text-2xl">{highlight.title}</h3>
+                  <p className="text-sm xl:text-lg text-gray-600">
                     {highlight.description}
                   </p>
                 </div>
@@ -73,8 +69,8 @@ const QuadHighlights = () => {
             ))}
           </div>
 
-          <div className="flex justify-center">
-            <Button className="bg-black text-white px-10 py-2 rounded-none">
+          <div className="flex justify-center xl:justify-start">
+            <Button className="bg-black text-white xl:text-lg px-10 py-2 rounded-none">
               VIEW MORE
             </Button>
           </div>
