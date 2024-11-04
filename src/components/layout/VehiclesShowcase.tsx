@@ -24,9 +24,9 @@ const VehiclesShowcase: React.FC = () => {
   const location = useLocation();
 
   return (
-    <main>
-      <h1 className="text-center text-2xl font-semibold pb-5">Quads</h1>
-      <ul className="flex justify-center gap-3">
+    <main className="w-full ">
+      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-semibold ">Vehicles</h1>
+      <ul className="flex justify-center gap-3 my-5 text-lg md:text-xl">
         <li>
           <NavLink
             to="/"

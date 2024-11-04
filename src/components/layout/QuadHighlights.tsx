@@ -70,7 +70,7 @@ const QuadHighlights = () => {
           </div>
 
           <div className="flex justify-center xl:justify-start">
-            <Button className="bg-black text-white xl:text-lg px-10 py-2 rounded-none">
+            <Button className=" text-white xl:text-lg px-10 py-2 rounded-none">
               VIEW MORE
             </Button>
           </div>

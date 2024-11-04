@@ -15,7 +15,7 @@ const catProps = [
 
 const Categories = () => {
   return (
-    <div className="my-10">
+    <div className="my-10 ">
       <h1 className="text-center text-3xl md:text-4xl lg:text-5xl pb-10 font-semibold">
         Categories
       </h1>

@@ -9,6 +9,7 @@ import QuadHighlights from "@/components/layout/QuadHighlights";
 import Footer from "@/components/layout/Footer";
 import VehiclesShowcase from "@/components/layout/VehiclesShowcase";
 import { BrowserRouter as Router } from "react-router-dom";
+import FindUs from "@/components/layout/FindUs";
 
 const Home = () => {
   const [loading, setLoading] = useState(true); // State to track if the app is loading
@@ -47,6 +48,7 @@ const Home = () => {
         <VehiclesShowcase />
       </Router>
       <QuadHighlights />
+      <FindUs />
       <Footer />
     </ContentContainer>
   );
