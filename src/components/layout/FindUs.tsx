@@ -20,7 +20,7 @@ const FindUs = () => {
   const position = [31.1499, -4.0172]; // Coordinates for Merzouga, Morocco
 
   return (
-    <div className="my-5">
+    <div className="my-5 ">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
         Find Us
       </h1>
@@ -41,7 +41,7 @@ const FindUs = () => {
           </Marker>
         </MapContainer>
       </div>
-      <ul className="flex flex-col md:flex-row justify-center gap-16">
+      <ul className="flex flex-col md:flex-row justify-center gap-16 font-semibold text-lg">
   <li>
     <div className="flex flex-col items-center justify-center">
       <MapPin />

@@ -10,6 +10,8 @@ import Footer from "@/components/layout/Footer";
 import VehiclesShowcase from "@/components/layout/VehiclesShowcase";
 import { BrowserRouter as Router } from "react-router-dom";
 import FindUs from "@/components/layout/FindUs";
+import Lenis from "lenis";
+
 
 const Home = () => {
   const [loading, setLoading] = useState(true); // State to track if the app is loading
@@ -24,6 +26,16 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time:any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
+  
   if (loading) {
     // Show the loader while loading is true
     return <Loader />;
