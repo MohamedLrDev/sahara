@@ -4,29 +4,14 @@ import { UserRound, ShoppingCart, Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  
   return (
-    <nav
-  className={`fixed top-0 left-0 w-full z-50 ${
-    isScrolled ? "bg-[#2F4F4F]" : "bg-transparent"
-  }`}
->
+<nav className="flex justify-around text-lg  items-center w-full bg-slate-600 text-white">
   <div className="w-full max-w-screen-3xl mx-auto  py-2 px-10 text-white flex justify-around items-center">
         <div className="w-16 md:max-2xl:w-15">
           <a href="#">

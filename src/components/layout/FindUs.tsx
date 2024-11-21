@@ -24,7 +24,7 @@ const FindUs = () => {
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
         Find Us
       </h1>
-      <div className="flex justify-center py-10">
+      <div className="flex justify-center py-10 z-10">
         <MapContainer
           center={position}
           zoom={13}
